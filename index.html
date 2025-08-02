@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h3>Search</h3>
+
+    <form id="movieSearch" action="">
+      <table>
+        <tr>
+          <td class="label"><label for="title">Title</label></td>
+          <td><input type="text" name="" id="title" value="hello" /></td>
+        </tr>
+
+        <tr>
+          <td class="label"><label for="typeMovie">Type</label></td>
+          <td>
+            <select name="" id="typeMovie">
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label"><label for="apiValue">API</label></td>
+          <td>
+            <select name="" id="apiValue">
+              <option value="omdbapi">OMDb</option>
+              <option value="tmdb">TMDb</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><button id="search">Search</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <footer>
+      <h5>
+        This site used
+        <a href="http://www.omdbapi.com/">Open Movie Database</a>,
+        <a href="https://www.themoviedb.org">The Movie Database</a> <br />
+        Created by GDA
+      </h5>
+    </footer>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

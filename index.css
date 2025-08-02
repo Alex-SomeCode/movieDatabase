@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  margin: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  background-color: lightgray;
+  padding: 10px;
+}
+footer h5 {
+  line-height: 25px;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.closeElement {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  right: 15px;
+  top: 15px;
+}
+
+.closeElement div {
+  position: absolute;
+  height: 15px;
+  width: 2px;
+  background-color: black;
+  left: 7px;
+}
+
+.closeElement div:nth-child(1) {
+  transform: rotate(45deg);
+}
+.closeElement div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.movieDetailsCardContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.movieDetailsCardLoad {
+  width: 300px;
+  background-color: beige;
+  display: flex;
+  max-width: 1000px;
+  min-width: 100px;
+  max-height: 500px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  position: relative;
+}
+
+.movieDetailsCard {
+  background-color: beige;
+  max-width: 1000px;
+  min-width: 100px;
+  width: 75%;
+}
+
+.movieDetailsCard img {
+  flex: 0 1 30%;
+}
+
+.noImage {
+  width: 300px;
+  height: 200px;
+}
+
+.movieDetailsCard table {
+  flex: 0 1 65%;
+  /* margin: 0 auto; */
+  /* width: 500px; */
+}
+
+.filmCard {
+  width: 200px;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.filmCard img {
+  width: 200px;
+  height: 300px;
+}
+.filmCard span {
+  margin-bottom: 10px;
+}
+
+#wrapperFilmCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+#movieSearch {
+  margin: 0 auto;
+  max-width: 400px;
+  border: 1px solid black;
+}
+#movieSearch label {
+  width: 40px;
+  display: block;
+}
+
+#movieSearch table select,
+#movieSearch table input,
+#movieSearch table input,
+#movieSearch table button {
+  width: 100%;
+  height: 20px;
+}
+
+#filmsContainer > button {
+  margin: 30px auto;
+  display: block;
+  width: 300px;
+  margin-bottom: 90px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 15px;
+}
+
+.label {
+  width: 40px;
+}
+
+.wrapperLoadAnimation {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 75px auto;
+  position: relative;
+}
+
+.lines {
+  width: 4px;
+  height: 25px;
+  position: absolute;
+  transform-origin: 1px 25px;
+}
+
+.wrapperLoadAnimation div:nth-child(1) {
+  left: 24px;
+  top: -25px;
+  animation-delay: -1.1s;
+}
+.wrapperLoadAnimation div:nth-child(2) {
+  transform-origin: 1px 25px;
+  transform: rotate(30deg);
+  top: -21.65px;
+  left: 36.5px;
+  animation-delay: -1s;
+}
+.wrapperLoadAnimation div:nth-child(3) {
+  transform-origin: 1px 25px;
+  transform: rotate(60deg);
+  left: 45px;
+  top: -12.5px;
+  animation-delay: -0.9s;
+}
+.wrapperLoadAnimation div:nth-child(4) {
+  transform-origin: 1px 25px;
+  left: 49px;
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.wrapperLoadAnimation div:nth-child(5) {
+  transform-origin: 1px 0px;
+  left: 45px;
+  bottom: -12.5px;
+  transform: rotate(-60deg);
+  animation-delay: -0.7s;
+}
+.wrapperLoadAnimation div:nth-child(6) {
+  transform-origin: 1px 0px;
+  left: 36.5px;
+  bottom: -21.65px;
+  transform: rotate(-30deg);
+  animation-delay: -0.6s;
+}
+.wrapperLoadAnimation div:nth-child(7) {
+  left: 24px;
+  bottom: -25px;
+  animation-delay: -0.5s;
+}
+.wrapperLoadAnimation div:nth-child(8) {
+  transform-origin: 1px 0px;
+  transform: rotate(30deg);
+  right: 36.5px;
+  bottom: -21.65px;
+  animation-delay: -0.4s;
+}
+.wrapperLoadAnimation div:nth-child(9) {
+  transform-origin: 1px 0px;
+  transform: rotate(60deg);
+  right: 45px;
+  bottom: -12.5px;
+  animation-delay: -0.3s;
+}
+.wrapperLoadAnimation div:nth-child(10) {
+  transform-origin: 1px 25px;
+  transform: rotate(-90deg);
+  animation-delay: -0.2s;
+}
+.wrapperLoadAnimation div:nth-child(11) {
+  transform-origin: 1px 25px;
+  transform: rotate(-60deg);
+  top: -12.5px;
+  right: 45px;
+  animation-delay: -0.1s;
+}
+.wrapperLoadAnimation div:nth-child(12) {
+  transform-origin: 1px 25px;
+  transform: rotate(-30deg);
+  top: -21.65px;
+  right: 36.5px;
+  animation-delay: 0s;
+}
+
+@keyframes loader {
+  0% {
+    background-color: gray;
+  }
+  100% {
+    background-color: lightgray;
+  }
+}
+
+.wrapperLoadAnimation .lines {
+  animation: loader 1.2s linear infinite;
+}
+
+@media (max-width: 1200px) {
+  .movieDetailsCard {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .movieDetailsCard table {
+    flex: 0 1 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .movieDetailsCard table {
+    margin: 0 auto;
+    flex: 0 1 50%;
+  }
+
+  .movieDetailsCard img {
+    margin: 0 auto;
+  }
+}
