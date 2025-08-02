@@ -21,7 +21,7 @@ export const MovieType = {
 };
 
 export const API = {
-  omdb: { name: omdbName, url: `http://www.omdbapi.com/?apikey=${omdKey}` },
+  omdb: { name: omdbName, url: `https://www.omdbapi.com/?apikey=${omdKey}` },
   tmdb: {
     name: tmdbName,
 
