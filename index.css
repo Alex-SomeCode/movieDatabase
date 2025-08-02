@@ -138,10 +138,10 @@ h3 {
 }
 
 #filmsContainer > button {
-  margin: 30px auto;
+  margin: 0px auto;
   display: block;
   width: 300px;
-  margin-bottom: 90px;
+  margin-bottom: 115px;
 }
 
 table {
