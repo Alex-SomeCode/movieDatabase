@@ -62,20 +62,7 @@ export class movieService {
         }
       };
 
-      // this.state.request.onerror = () => {
-      //   console.log("hiiii");
-      // };
-
-      // this.state.request.onload = () => {
-      //   console.log("hi");
-      //   const { response } = this.state.request;
-
-      //   console.log(response);
-      //   resolve(response);
-      //   console.log('ho');
-      // };
-
-      this.state.request.send();
+     this.state.request.send();
     });
   }
 
@@ -120,33 +107,3 @@ export class movieService {
     });
   }
 }
-
-//
-// import { createUrl } from "./functions.js";
-
-// export class movieService {
-//   static async createRequest(urlP) {
-//     return new Promise((resolve, reject) => {
-//       let request;
-
-//       if (window.XMLHttpRequest) {
-//         request = new XMLHttpRequest();
-//       } else {
-//         request = new ActiveXObject();
-//       }
-//       request.responseType = "json";
-//       request.open("GET", urlP);
-//       request.onreadystatechange = () => {
-//         if (request.readyState === 4 && request.status == 200) {
-//           resolve(request);
-//         }
-//       };
-//       request.send();
-//     });
-//   }
-
-//   static searchFilms(formP) {
-//     const urlP = createUrl(formP);
-//     return this.createRequest(urlP);
-//   }
-// }
