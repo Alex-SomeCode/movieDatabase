@@ -62,6 +62,17 @@ export class movieService {
         }
       };
 
+      this.state.request.onerror = () => {
+        console.log("onerror");
+      };
+
+      this.state.request.onload = () => {
+        const { response } = this.state.request;
+        console.log(response);
+        resolve(response);
+      };
+
+
      this.state.request.send();
     });
   }

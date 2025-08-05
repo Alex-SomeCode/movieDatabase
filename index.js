@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      updateDOM.addMovieCards(movieService.state.movies);
+      updateDOM.addMovieCards(movieService.state.movies.splice(0, movieService.state.movies.length));
+      updateDOM.state.moreMoviesButton.element.remove()
     }, 2500);
   };
 
@@ -85,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDOM.state.moreMoviesButton.element.disabled = true;
 
     focusElement(updateDOM.state.loadAnimation.idValue);
-
     const length = movieService.state.movies.length;
 
     length !== 0 &&
@@ -116,9 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (length == 0) {
       if (!movieService.state.url.nextValues) {
-        movieService.state.url.nextValues = `${
-          movieService.state.url.beginValue
-        }&page=${++movieService.state.currentPage}`;
+        movieService.state.url.nextValues = `${movieService.state.url.beginValue
+          }&page=${++movieService.state.currentPage}`;
       } else {
         console.log("test_2");
         movieService.state.url.nextValues =
